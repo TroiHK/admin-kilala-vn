@@ -12,9 +12,9 @@ import logo from '../../images/logo.png';
 const SideNavigation = () => {
   return (
     <div className="sidebar-fixed position-fixed">
-      <a href="#!" className="logo-wrapper waves-effect">
+      <NavLink to="/" className="logo-wrapper waves-effect">
         <img alt="MDB React Logo" className="img-fluid" src={logo}/>
-      </a>
+      </NavLink>
       <MDBListGroup className="list-group-flush">
         <NavLink exact={true} to="/" activeClassName="activeClass">
           <MDBListGroupItem>
@@ -32,6 +32,12 @@ const SideNavigation = () => {
           <MDBListGroupItem>
             <MDBIcon icon="project-diagram" className="mr-3"/>
             Projects
+          </MDBListGroupItem>
+        </NavLink>
+        <NavLink to="/posts" activeClassName="activeClass">
+          <MDBListGroupItem>
+            <MDBIcon icon="newspaper" className="mr-3"/>
+            Posts
           </MDBListGroupItem>
         </NavLink>
         <NavLink to="/tables" activeClassName="activeClass">

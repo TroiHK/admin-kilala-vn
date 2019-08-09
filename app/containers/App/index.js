@@ -17,6 +17,7 @@ import 'mdbreact/dist/css/mdb.css';
 import HomePage from 'containers/HomePage/Loadable';
 import UsersPage from 'containers/UsersPage/Loadable';
 import ProjectsPage from 'containers/ProjectsPage/Loadable';
+import PostsPage from 'containers/PostsPage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import Header from 'components/Header';
@@ -35,6 +36,7 @@ export default function App() {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/users" component={UsersPage} />
           <Route exact path="/projects" component={ProjectsPage} />
+          <Route exact path="/posts" component={PostsPage} />
           <Route component={NotFoundPage} />
         </Switch>
       </main>
